@@ -32,3 +32,5 @@ The other method uses the address-of (&) operator on the first element of the ar
 ```c++
 std::cout << "The array numArray lies at memory address: " << &numArray[0] << std::endl;
 ```
+https://sdccd.us-west-2.instructuremedia.com/embed/be785bee-0d3b-43a2-82b3-f51a93c23242
+(Upon rewatching the video I realized I stated the answer for question 4 incorrectly, I repeatedly said the process would take N number of steps with N being the size of the "index" but what I meant to say was with N being the size of the array)
