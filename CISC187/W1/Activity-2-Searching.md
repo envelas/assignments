@@ -14,15 +14,56 @@ The maximum number of steps would require a worst-case scenario in which the val
 #include <vector>
 #include <algorithm>
 
-void linearSearch(const vector<int>& v, vector<int>& d, int key) {
+//Function for linear search
+int linearSearch(const vector<int>& v, int key) {
+  int comparisons = 0;
   for (int i = 0; i < v.size(); i++) {
-    if (v[i] = key)
-      d.push_back(i);
+    comparisons++;
+    if (v[i] == key)
+      return comparisons;
   }
+  return comparisons; //value not found, will return 0
 }
 
+//Function for binary search
+int binarySearch(const vector<int>& v, int key) {
+    int comparisons = 0;
+    int low = 0;
+    int high = v.size() - 1;
+
+    while (low <= high) {
+      comparisons++;
+      int mid = low + (high - low) / 2;
+
+      if (v[mid] == key) {
+        return comparisons;
+      }
+
+      if (v[mid] < key) {
+        low = mid + 1;
+      } else {
+        high = mid - 1;
+        }
+    }
+  return comparisons;
+}
+
+
 int main() {
-  vector<int> 
+  vector<int> data(100000);
+
+  int key;
+  cout << "Enter a number to search for: ";
+    cin >> key;
+
+  int linearSteps = linearSearch(data, key);
+  int binarySteps = binarySearch(data, key);
+
+  cout << "Linear Search Steps: " << linearSteps << endl;
+  cout << "Binary Search Steps: " << binarySteps << endl;
+
+  return 0;
+}
 ```
 
 ## Write pseudocode for a randomized search algorithm that searches for a given key by randomly selecting indices without repetition. Use a dataset of 100,000 distinct elements, stored in a vector. Each element may be examined at most once during the search. Analyze and state the best-case, average-case, and worst-case time complexities of this algorithm using Big-O notation.
