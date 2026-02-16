@@ -9,6 +9,21 @@ A binary search on this array would take just one step since it would start in t
 The maximum number of steps would require a worst-case scenario in which the value that is being searched for is either in the beginning or end of the array. Since binary search begins in the middle of the array and proceeds to omit half of the array with each step, this would take log(100,000) (log base 2) steps which is approximately 17 steps.
 
 ## Write a C++ program that implements both linear search and binary search algorithms using an array of 100,000 elements. The program should record and report the number of steps (comparisons) performed during each search operation. In addition, analyze and justify the observed behavior by providing a theoretical explanation using Big-O notation, demonstrating why linear search exhibits O(N) complexity and binary search exhibits O(logN) complexity.
+```C++
+#include <iostream>
+#include <vector>
+#include <algorithm>
+
+void linearSearch(const vector<int>& v, vector<int>& d, int key) {
+  for (int i = 0; i < v.size(); i++) {
+    if (v[i] = key)
+      d.push_back(i);
+  }
+}
+
+int main() {
+  vector<int> 
+```
 
 ## Write pseudocode for a randomized search algorithm that searches for a given key by randomly selecting indices without repetition. Use a dataset of 100,000 distinct elements, stored in a vector. Each element may be examined at most once during the search. Analyze and state the best-case, average-case, and worst-case time complexities of this algorithm using Big-O notation.
 
