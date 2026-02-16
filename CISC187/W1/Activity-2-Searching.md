@@ -182,4 +182,6 @@ int main() {
 
 Since binary search requires the data to be sorted, it is most practical for large sets of data since the process of sorting the data in and of itself requires memory usage. Randomized search serves basically the same purpose as linear search, and for smaller sets of unsorted data these types of searches will prove most effective.
 
+https://sdccd.us-west-2.instructuremedia.com/embed/bf87cb5e-ba99-41c1-89d5-3180bd72c081
+
 
