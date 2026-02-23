@@ -3,8 +3,10 @@
 ## Tasks
 
 #### 1. Use Big O Notation to describe the time complexity of an algorithm that takes 4N + 16 steps.
+Since Big O Notation ignores constants and constant multiples or coefficients, the time complexity of this algorithm is simply O(N) which is a linear time complexity. As N gets increasingly larger, the constant 16 becomes irrelevant. If the effect of the multiplier of 4 is observed on a graph as compared to just N, both growths are linear and once again with a large N the multiplier becomes irrelevant as the time complexity can still be described simply as the linear growth O(N).
 
 #### 2. Use Big O Notation to describe the time complexity of an algorithm that takes 2N^2. 
+As stated in the previous question, the effect of the constant multiplier or coefficient is irrelevant for large values of N. Big O notation cares only about the higher order nature of the algorithm, or the highest power exponent, which in this case is 2. The notation would be written as O(N^2) which describes quadratic growth.
 
 #### 3. Use Big O Notation to describe the time complexity of the following function, which returns the sum of all numbers of an array after the numbers have been doubled:
 
@@ -24,6 +26,7 @@ def double_then_sum(array)
 	return sum 
 end
 ```
+This function would first iterate through the entire array doubling each value, a process taking N steps with N being the total size of the array. Summing each value would require iterating through the entire array again for an additional N number of steps for a grand total of N + N or 2N steps. In Big O notation this would simply be the linear time complexity O(N).
 
 #### 4. Use Big O Notation to describe the time complexity of the following function, which accepts an array of strings and prints each string in multiple cases:
 
