@@ -55,3 +55,5 @@ def every_other(array)
 end
 ```
 On average, the number of even indexes in an array are approximately N/2. Every time an even index is found, the whole array gets iterated through once again. The total amount of steps this would take is N * N/2 or (N^2)/2 steps. In Big O notation, this would be the quadratic time complexity O(N^2) since the divisor 2 becomes irrelevant for larger values of 2.
+
+https://sdccd.us-west-2.instructuremedia.com/embed/0651f7e4-4939-4791-b8ac-70ee86fedc43
