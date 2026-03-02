@@ -87,3 +87,15 @@ int main() {
     return 0;
 }
 ```
+## Part B: Case Classification Without Sorting
+## Part C: Documentation
+Provide a written explanation that includes:
+
+-The threshold definition you used to differentiate between best, average, and worst cases.
+-The reasoning behind your assumption.
+-Why your program selects one sorting algorithm over the other in specific scenarios.
+-A brief discussion of how input order affects the time complexity of Selection Sort and Insertion Sort.
+
+Your explanation should demonstrate a clear understanding of algorithmic behavior and time complexity analysis.
+
+
