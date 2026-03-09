@@ -1,8 +1,13 @@
+# Activity 5: Hash Tables
+
+## Hash Table Code:
+
 ```C++
 #include <vector>
 #include <list>
 #include <string>
 #include <iostream>
+#include <iomanip>
 
 using namespace std;
 
@@ -160,3 +165,8 @@ int main() {
     return 0;
 }
 ```
+## Written Response and Observation:
+
+The polynomial rolling hash works really well on all three types of inputs because it looks at both the character itself and where it is in the string. In the Sequential and Same Prefix tests, the strings are almost identical, just changing at the very end. The multiplier helps make sure that even a tiny change in the input makes a completely different hash value. This stops similar strings from clustering together, which is a problem with simpler methods like just adding up the character values. The result is that the average bucket length stays short and everything is spread out evenly. 
+
+Even though I recorded a lot of collisions in total, the biggest bucket size is still tiny (usually less than 5). This means the collisions are spread out nicely across the whole table instead of piling up in one spot. When I experimented using the same prefix test, even with keys that start exactly the same for a long time, the function avoids slowing down much, keeping the average lookup time consistently fast. 
