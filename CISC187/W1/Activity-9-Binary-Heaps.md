@@ -3,7 +3,7 @@
 Implement binary heaps data structures in C++
 ## Tasks
 #### 1. Draw what the following heap would look like after we insert the value 11 into it:
-image
+!(activity9part1.drawio)
 
 #### 2. Draw what the previous heap would look like after we delete the root node.
 
